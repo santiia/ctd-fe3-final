@@ -2,6 +2,8 @@
 
 Examen Final de Frontend III
 
+Jeronimo Orozco
+Santiago Ortigoza
 ## Indice
 
 - [Requisitos](#requisitos)
