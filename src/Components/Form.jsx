@@ -28,7 +28,7 @@ const Form = () => {
 
   const HandleSubmit = (e) => {
     e.preventDefault();
-    if (solicitud.nombre.length > 5 && emailValidation() == true) {
+    if (solicitud.nombre.length > 5 && emailValidation() === true) {
       setMessage(
         "Gracias " +
           solicitud.nombre +
