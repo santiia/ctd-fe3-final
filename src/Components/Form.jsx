@@ -8,29 +8,43 @@ const Form = () => {
     nombre: "",
     email: ""
   })
-  const HandleNombre = (e) => {
-    
-    if(solicitud.nombre.length > 5){
+
+  const [meesage, setMessage] = useState("")
+  // setear valores en el hook
+  const HandleChange = (e) => {
+    const nombre = e.target.name;
+    let value = e.target.value;
+    setSolicitud({...solicitud, [nombre] : value})
+    console.log(solicitud)
+  }
+  // validar que el email tenga el formato correcto
+  const emailValidation = () => {
+    const regEx = /[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
+    if(regEx.test(solicitud.email)){
       return true
     } else{
       return false
     }
+
   }
-  // validateEmail = (email) => {
-  //   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  //     return re.test(email);
-  // };
-  const HandleSubmit = () => {
-    
+
+  const HandleSubmit = (e) => {
+    e.preventDefault()
+    if(solicitud.nombre.length > 5 && emailValidation() == false){
+        setMessage("Gracias "+ solicitud.nombre  + " te contactaremos cuanto antes via email") 
+    } else{ 
+      setMessage("Por favor verifique su informacion nuevamente")
+    }
   }
 
   return (
     <div>
       <form>
-        <input type="text" placeholder="Nombre" onChange={(e) => setSolicitud(...solicitud, solicitud.nombre = e.target.value)}></input>
-        <input type="text" placeholder="Email"></input>
-        <button type="submit" onClick={HandleSubmit()}>Envia</button>
+        <input type="text" placeholder="Nombre" name="nombre" onChange={(e) => HandleChange(e)}></input>
+        <input type="text" placeholder="Email" name="email" onChange={(e) => HandleChange(e)}></input>
+        <button type="submit" onClick={e => HandleSubmit(e)}>Envia</button>
       </form>
+      <h3>{meesage}</h3>
     </div>
   );
 };
