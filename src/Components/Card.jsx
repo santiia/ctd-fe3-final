@@ -10,7 +10,7 @@ const Card = ({ name, username, id }) => {
   return (
     <div className="card">
         <img src="" alt=""/>
-        <Link to="/dentist/:id"><h4>{name}</h4></Link>
+        <Link to={"/dentist/"+id}><h4>{name}</h4></Link>
         <h4>{username}</h4>
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
 

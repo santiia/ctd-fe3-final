@@ -5,8 +5,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Routes/Home"
 import Contact from "./Routes/Contact"
 import Favs from "./Routes/Favs"
-import Detail from "./Routes/Detail";
-
+import Detail from "./Routes/Detail"
 
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
           <Navbar/>
           <Routes>
             <Route path="/home" element={<Home/>}/>
-            {/* <Route path="/dentist/:id" element={<Detail/>}/> */}
+            <Route path="/dentist/:dentistId" element={<Detail/>}/>
             <Route path="/contacto" element={<Contact/>}/>
             <Route path="/favs" element={<Favs/>}/>
           </Routes>
