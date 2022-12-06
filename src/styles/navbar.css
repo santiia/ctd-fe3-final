@@ -1,0 +1,24 @@
+.navbar {
+  background-color: blue;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: aqua;
+  font-size: 18px;
+}
+
+.navbar button {
+  border-radius: 50px;
+}
+
+.navbar button:hover {
+  color: white;
+  background-color: black;
+}
