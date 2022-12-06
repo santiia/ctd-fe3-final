@@ -1,4 +1,3 @@
-import { findAllByTestId } from "@testing-library/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -24,7 +23,6 @@ const Card = ({ name, username, id }) => {
     }else{
         dentistFavs.push(makeObject())
       localStorage.setItem("dentistFavs", JSON.stringify(dentistFavs))}
-         
       }
   
 
