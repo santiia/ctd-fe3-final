@@ -14,7 +14,6 @@ const Home = () => {
         {data?.map(item => {
           return <Card id={item.id} name={item.name} username={item.username}></Card> 
         })}
-        Aqui va el home
       </div>
     </main>
   )

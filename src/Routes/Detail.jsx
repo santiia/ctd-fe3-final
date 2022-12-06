@@ -16,8 +16,6 @@ const Detail = () => {
       setData(response.data);
     });
   }, [url]);
-  console.log(data)
-
   // let result = data?.find(item => item.id === params.id)
 
   // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico

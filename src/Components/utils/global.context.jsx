@@ -16,7 +16,6 @@ export const ContextGlobal = createContext(undefined);
   useEffect(() => {
     axios.get(url).then((response) => {
       setData(response.data);
-      console.log(response.data)
     });
   }, []);
 
