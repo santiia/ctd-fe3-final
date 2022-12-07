@@ -2,11 +2,16 @@
   background-color: blue;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.navbar div {
+  margin: 20px;
 }
 
 .navbar a {
   color: white;
+  margin: 20px;
 }
 
 .navbar a:hover {
@@ -16,6 +21,8 @@
 
 .navbar button {
   border-radius: 50px;
+  background-color: burlywood;
+  color: black;
 }
 
 .navbar button:hover {
