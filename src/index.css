@@ -61,14 +61,14 @@ footer > p {
   padding-top: 0.7rem;
 } */
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
   height: 100px;
   margin: 0 auto;
-}
+} */
 
 /* .card{
   display: flex;
