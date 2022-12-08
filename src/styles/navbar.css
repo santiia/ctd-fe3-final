@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .navbar {
-  background-color: blue;
+  background-color: rgb(65, 65, 255);
   width: 100%;
   display: flex;
   justify-content: space-between;
