@@ -11,8 +11,9 @@
   background-size: 100%;
   background-repeat: no-repeat;
   color: black;
+  border-color: blue;
 }
-#cardImage{
+#cardImage {
   width: 60%;
   height: 40%;
   contain: inherit;
