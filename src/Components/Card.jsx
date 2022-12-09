@@ -1,8 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import  '../styles/card.css'
+import { useContextGlobal } from './utils/global.context'
 
 const Card = ({name, username, id}) => {
+  const {theme} = useContextGlobal()
+  const classCard = `card card-syles ${theme}`
   const makeObject = () => {
     let object = {
       name: name,
@@ -27,7 +30,7 @@ const Card = ({name, username, id}) => {
   }
 
   return (
-    <div className="card card-syles" >
+    <div className={classCard} >
       <img src="https://st.depositphotos.com/2650255/4760/v/950/depositphotos_47600511-stock-illustration-doctor-illustration.jpg" alt="" id="cardImage" />
       <Link to={'/dentist/' + id}>
         <h4>{name}</h4>

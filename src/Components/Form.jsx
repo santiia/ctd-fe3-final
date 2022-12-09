@@ -1,7 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
 import  '../styles/form.css'
-import { useContextGlobal } from './utils/global.context'
 
 const Form = () => {
   //Aqui deberan implementar el form completo con sus validaciones
@@ -54,7 +53,7 @@ const Form = () => {
           placeholder="Email"
           name="email"
           onChange={(e) => HandleChange(e)}></input>
-        <button type="submit" onClick={(e) => HandleSubmit(e)}>
+        <button type="submit" onClick={(e) => HandleSubmit(e)} className="button-form">
           Envia
         </button>
       </form>

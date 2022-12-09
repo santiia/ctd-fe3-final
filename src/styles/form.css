@@ -19,9 +19,10 @@ form input {
 
 form button {
   margin-top: 10px;
-  border-radius: 40px;
-  padding: 8px;
-  width: 90px;
+    border-radius: 40px;
+    padding: 8px;
+    width: 90px;
+    margin-bottom: 29px;
 }
 
 form button:hover {
