@@ -5,6 +5,8 @@ import { useState } from "react";
 import { useContext } from "react";
 import { useEffect } from "react";
 
+
+
 export const initialState = {theme: "", data: []}
 
 export const ContextGlobal = createContext(undefined);
@@ -18,10 +20,21 @@ export const ContextGlobal = createContext(undefined);
       setData(response.data);
     });
   }, []);
+  
+  const [theme, setTheme] = useState("light")
 
+  const handleTheme = () =>{
+    if(theme === "light"){
+      setTheme("dark")
+      console.log(theme)
+    } else{
+      setTheme("light")
+    }
+  }
+  
   return (
     <ContextGlobal.Provider value={{
-      data
+      data, theme, handleTheme
     }}>
       {children}
     </ContextGlobal.Provider>

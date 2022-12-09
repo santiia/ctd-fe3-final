@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {cardStyles} from '../styles/card.css'
+import  '../styles/card.css'
 
 const Card = ({name, username, id}) => {
   const makeObject = () => {
@@ -19,7 +19,7 @@ const Card = ({name, username, id}) => {
     const dentistFavs = JSON.parse(localStorage.getItem('dentistFavs')) || []
 
     if (!!isDentistInFavorites(makeObject(), dentistFavs)) {
-      console.log('ya esta incluido')
+      return
     } else {
       dentistFavs.push(makeObject())
       localStorage.setItem('dentistFavs', JSON.stringify(dentistFavs))
@@ -27,15 +27,12 @@ const Card = ({name, username, id}) => {
   }
 
   return (
-    <div className="card card-syles" id={id}>
-      <img src="" alt="" />
+    <div className="card card-syles" >
+      <img src="https://st.depositphotos.com/2650255/4760/v/950/depositphotos_47600511-stock-illustration-doctor-illustration.jpg" alt="" id="cardImage" />
       <Link to={'/dentist/' + id}>
         <h4>{name}</h4>
       </Link>
       <h4>{username}</h4>
-      {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
-
-      {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
       <button onClick={addFav} className="favButton">
         Add fav
       </button>

@@ -2,6 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios"
 import { useState } from "react";
+import  '../styles/detail.css'
+
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
@@ -21,15 +23,17 @@ const Detail = () => {
   // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
 
   return (
-    <>
+    <div className="dentistDetail">
       <h1>Detail Dentist id </h1>
-      <h2>{data.name}</h2>
-      <h2>{data.email}</h2>
-      <h2>{data.phone}</h2>
-      <h2>{data.website}</h2>
-      {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
-      {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
-    </>
+      <h2>Nombre</h2>
+      <p>{data.name}</p>
+      <h2>Email</h2>
+      <p>{data.email}</p>
+      <h2>Telefono</h2>
+      <p>{data.phone}</p>
+      <h2>Sitio Web</h2>
+      <p>{data.website}</p>
+    </div>
   );
 };
 

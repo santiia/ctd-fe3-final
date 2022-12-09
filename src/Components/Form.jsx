@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
-import {formStyles} from '../styles/form.css'
+import  '../styles/form.css'
+import { useContextGlobal } from './utils/global.context'
 
 const Form = () => {
   //Aqui deberan implementar el form completo con sus validaciones

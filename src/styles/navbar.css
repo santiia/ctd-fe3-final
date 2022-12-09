@@ -1,31 +1,31 @@
-.navbar {
+nav {
   background-color: blue;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: -22px;
 }
 
-.navbar div {
+nav div {
   margin: 20px;
 }
-
-.navbar a {
+nav a {
   color: white;
   margin: 20px;
 }
 
-.navbar a:hover {
+nav a:hover {
   color: aqua;
   font-size: 18px;
 }
 
-.navbar button {
+nav button {
   border-radius: 50px;
   background-color: burlywood;
   color: black;
 }
 
-.navbar button:hover {
+nav button:hover {
   color: white;
   background-color: black;
 }
