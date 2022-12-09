@@ -9,21 +9,21 @@
 }
 
 .title-detail {
-  background-color: rgb(0, 132, 255);
   width: 300px;
   margin: auto;
 }
 
 .dentist-email {
-  background-color: rgb(0, 132, 255);
   width: 300px;
   padding: 8px;
   margin: auto;
 }
 
 .dentist-website {
-  background-color: rgb(0, 132, 255);
   width: 300px;
   padding: 8px;
   margin: auto;
+}
+.dentist-detail-dark{
+  background-color: aqua;
 }

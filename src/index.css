@@ -43,3 +43,10 @@ a:hover {
 .dark > a {
   color: white;
 }
+.dark h4{
+  color: white;
+}
+.dark button{
+  background-color: blue;
+  color: white;
+}
