@@ -1,3 +1,35 @@
+<<<<<<< HEAD
 .dentistDetail{
     text-align: center;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.dentist-detail {
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-detail {
+  background-color: rgb(0, 132, 255);
+  width: 300px;
+  margin: auto;
+}
+
+.dentist-email {
+  background-color: rgb(0, 132, 255);
+  width: 300px;
+  padding: 8px;
+  margin: auto;
+}
+
+.dentist-website {
+  background-color: rgb(0, 132, 255);
+  width: 300px;
+  padding: 8px;
+  margin: auto;
+}
+>>>>>>> 1ecc7b313d388d0cdbc5515c157508c6f1ab257a

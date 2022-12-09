@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 nav {
   background-color: blue;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.navbar {
+  background-color: rgb(65, 65, 255);
+>>>>>>> 1ecc7b313d388d0cdbc5515c157508c6f1ab257a
   width: 100%;
   display: flex;
   justify-content: space-between;
