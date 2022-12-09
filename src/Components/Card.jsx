@@ -27,13 +27,8 @@ const Card = ({name, username, id}) => {
   }
 
   return (
-<<<<<<< HEAD
     <div className="card card-syles" >
       <img src="https://st.depositphotos.com/2650255/4760/v/950/depositphotos_47600511-stock-illustration-doctor-illustration.jpg" alt="" id="cardImage" />
-=======
-    <div className="card" id={id}>
-      <img src="" alt="" />
->>>>>>> 1ecc7b313d388d0cdbc5515c157508c6f1ab257a
       <Link to={'/dentist/' + id}>
         <h4>{name}</h4>
       </Link>
