@@ -2,8 +2,11 @@
 
 Examen Final de Frontend III
 
+# integrantes:
+
 Jeronimo Orozco
 Santiago Ortigoza
+
 ## Indice
 
 - [Requisitos](#requisitos)
@@ -59,7 +62,6 @@ Los siguientes aspectos son extras al requisito mínimo de aprobación que será
 **Funcionalidad de destacados**
 
 - Se valorará funcionalidades extra a esta feature, como lo pueden ser el eliminar de destacadados, manejo de errores al intentar agregar repetidos y reseteo total de los destacados.
-
 
 **Estilos**
 
